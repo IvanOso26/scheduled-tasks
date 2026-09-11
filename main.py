@@ -1,12 +1,13 @@
 ##################### Normal Starting Project ######################
+import os 
 import smtplib
 import datetime as dt
 import random
 import pandas as pd
 import smtplib
 from email.message import EmailMessage
-MY_EMAIL = "pythonday32angela@gmail.com"
-MY_PASSWORD = "ikem evks mzwv wyay"
+MY_EMAIL = os.environ.get("pythonday32angela@gmail.com")
+MY_PASSWORD = os.environ.get("ikem evks mzwv wyay")
 
 
 now = dt.datetime.now()
